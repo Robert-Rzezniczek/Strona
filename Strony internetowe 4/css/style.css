@@ -1,0 +1,402 @@
+@font-face {
+
+	font-family: 'Hunger Games';
+
+	src: url(../fonts/Hunger_Games.ttf);
+
+}
+
+@font-face {
+
+	font-family: 'Chunkfive Ex';
+
+	src: url(../fonts/Chunkfive_Ex.ttf);
+
+}
+
+body {
+
+	margin: 0;
+	font-family: 'Hunger Games';
+
+}
+
+.zdjecie {
+
+	width: 200px;
+	height: 200px;
+	background-color: #E8E4C1;
+	z-index: 4;
+	position: sticky;
+	border-right: 2px solid grey;
+	border-bottom: 2px solid grey;
+}
+
+
+
+header {
+	background-color: #00a6ec;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+	position: fixed;
+	margin-top: 0;
+	padding-top: 0;
+	margin-left: 0;
+	width: 100%;
+	z-index: 3;
+}
+
+header ul {
+	margin: 0px;
+	margin-left: 180px;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #00a6ec;
+
+}
+
+header li a {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	padding: 17px;
+	text-decoration: none;
+	color: black;
+
+}
+
+header li a:hover,
+header.menu-btm:hover {
+	background-color: #f4f4f4;
+	width: 160px;
+	text-decoration: underline;
+
+}
+
+header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height 2s easy-out;
+	-webkit-transition: max-height 2s easy-out;
+	-moz-transition: max-height 2s easy-out;
+}
+
+header .menu-icon {
+	cursor: pointer;
+	float: right;
+	padding: 20px 15px;
+	position: relative;
+}
+
+header .menu-icon .navicon {
+	background-color: rgb(0, 0, 0);
+	display: block;
+	height: 2px;
+	width: 15px;
+	position: relative;
+
+}
+
+header .menu-icon .navicon::before,
+header .menu-icon .navicon::after {
+	content: "";
+	background-color: #000;
+	display: block;
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	transition: all 1s;
+}
+
+header .menu-icon .navicon::before {
+	top: 5px;
+}
+
+header .menu-icon .navicon::after {
+	top: -5px;
+}
+
+header .menu-btm {
+	display: none;
+}
+
+header .menu-btm:checked~.menu {
+	max-height: 175px;
+
+}
+
+header .menu-btm:checked~.menu-icon .navicon::before {
+
+	transform: rotate(45deg) translateY(-8px);
+}
+
+header .menu-btm:checked~.menu-icon .navicon::after {
+	transform: rotate(-45deg) translateY(7px);
+
+}
+
+header .menu-btm:checked~.menu-icon .navicon {
+	background-color: transparent;
+}
+
+.notka {
+	font-family: 'Chunkfive Ex';
+}
+
+h4 {
+	font-size: 24px;
+	font-family: 'Hunger Games';
+	;
+	text-align: center;
+	margin: 20px;
+}
+
+div,
+.ParkC {
+	display: flex;
+	justify-content: center;
+	/*margin:20px;*/
+
+}
+
+/*div, .ciekawostka
+{
+	display:inline;
+	justify-content:center
+}*/
+
+.ParkC {
+	width: 100%;
+	justify-content: center;
+
+}
+
+.PC {
+	font-family: 'Chunkfive Ex';
+	/*background-color:orange;*/
+	margin-left: 0%;
+	margin-right: 0%;
+	text-align: center;
+	border-radius: 5px;
+	width: 100%;
+
+
+}
+
+
+.ParkCzdj {
+	width: 100%;
+	/*background-color:blue;*/
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	height: ;
+
+
+}
+
+.ParkCzdj1 {
+	width: 30%;
+	margin-bottom: 15px;
+
+}
+
+.ParkCzdj2 {
+	width: 30%;
+
+
+}
+
+.ParkCzdj3 {
+	width: 30%;
+
+}
+
+.grupapc {
+	background-color: #e60005;
+	width: 500px;
+	height: 300px;
+	border-radius: 15px;
+
+
+}
+
+.grupapc2 {
+	background-color: #ffd401;
+	width: 500px;
+	height: 160px;
+	border-radius: 15px;
+
+
+}
+
+.tekst_s {
+	width: 20%;
+}
+
+.strzalka {
+	height: 40px;
+	width: 40px;
+	padding: 10px;
+}
+
+/*.powrot:checked~ .strzalka:after
+{
+	transition-duration:3s;
+}*/
+.strzalka:hover {
+	transition-duration: 0.4s;
+
+	/*width:50px;
+	height:50px;*/
+	padding: 0px;
+}
+
+
+
+
+
+
+.MarinaG {
+	width: 100%;
+	justify-content: center;
+}
+
+div,
+.MarinaG {
+	display: flex;
+	justify-content: center;
+}
+
+.MarinaG1 {
+	width: 40%;
+	/*background-color:#e60005;*/
+	width: 800px;
+}
+
+.MarinaG2 {
+	width: 40%;
+	/*background-color:#e60005;*/
+}
+
+.grupamg {
+	background-color: #e60005;
+	width: 500px;
+	height: 300px;
+	border-radius: 15px;
+}
+
+.tabela {
+	margin: 30px;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	align-self: center;
+	font-family: 'Chunkfive Ex';
+	display: flex;
+	justify-content: center;
+}
+
+
+h5 {
+	font-family: 'Chunkfive Ex';
+	text-align: center;
+}
+
+table {
+	background-color: #ffd401;
+	border: 1px solid black;
+	border-spacing: 3px;
+	padding: 10px;
+	padding margin: 30px;
+	font-family: 'Chunkfive Ex';
+	text-align: center;
+}
+
+.notka {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	justify-content: center;
+}
+
+.BCZ {
+	width: 100%;
+	justify-content: center;
+}
+
+div,
+.BCZ {
+	display: flex;
+	justify-content: center;
+}
+
+.BCZ1 {
+	width: 40%;
+	/*background-color:#e60005;*/
+	width: 800px;
+}
+
+.BCZ2 {
+	width: 40%;
+	/*background-color:#e60005;*/
+}
+
+.grupabcz {
+	background-color: #e60005;
+	width: 500px;
+	height: 300px;
+	border-radius: 15px;
+}
+
+.zdjecie_j {
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+
+.zdjecie_j1 {
+	justify-content: center;
+	width: 900px;
+	height: 550px;
+
+}
+
+form {
+	justify-content: center;
+	border: 1px solid black;
+	width: 600px;
+}
+
+.stopka {
+	box-sizing: border-box;
+	font-family: 'Hunger Games';
+
+	font-size: 18px;
+	font-weight: 500;
+
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: flex;
+	bottom: 0;
+	right: 0 3rem;
+	margin-bottom: 0;
+
+	background: #00a6ec;
+	/*#DAE8C1#F0A34C*/
+	display: flex;
+	justify-content: center;
+	border-top: 1px solid black;
+}
+
+.stopka p {
+	margin: 0 1rem;
+	text-decoration: none;
+	padding: 1rem .5rem;
+}
+
+.stopeczka>a {
+	width: 20%;
+}
